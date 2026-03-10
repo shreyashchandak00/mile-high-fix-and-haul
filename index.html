@@ -1,0 +1,2662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mile High Fix &amp; Haul LLC - Reliable Handyman &amp; Junk Removal in Denver, CO. 5-Star Rated. Book online or call 720-985-0587 for a free quote.">
+    <meta name="keywords"
+        content="Denver handyman, junk removal Denver, Mile High Fix and Haul, Mile High Fix &amp; Haul LLC">
+    <meta name="author" content="Mile High Fix &amp; Haul LLC">
+    <meta property="og:title" content="Mile High Fix &amp; Haul LLC | Denver, CO">
+    <meta property="og:description"
+        content="Professional Handyman &amp; Junk Removal services in Denver, CO. 5-star rated. Book online today!">
+    <meta property="og:type" content="website">
+    <title>Mile High Fix &amp; Haul LLC | Denver, CO - Book Online</title>
+
+    <!-- Fonts & Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- 1. CSS VARIABLES & RESET --- */
+        :root {
+            --primary: #0f496c;
+            --secondary: #ffd04b;
+            --accent: #3b82f6;
+            --success: #10b981;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --white: #ffffff;
+            --bg-light: #f8fafc;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* --- 2. UTILITY CLASSES --- */
+        button.nav-btn,
+        button.chat-btn,
+        button.quick-reply-btn {
+            background: transparent;
+            border: none;
+            font-family: inherit;
+            cursor: pointer;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+        }
+
+        .grid {
+            display: grid;
+            gap: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            border: none;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            background-color: #eab308;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(250, 204, 21, 0.4);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--white);
+            color: var(--white);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary);
+        }
+
+        .btn-success {
+            background-color: var(--success);
+            color: white;
+        }
+
+        .btn-success:hover {
+            background-color: #059669;
+        }
+
+        .section-header {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .section-header .divider {
+            height: 4px;
+            width: 60px;
+            background: var(--secondary);
+            margin: 0 auto;
+        }
+
+        /* --- 3. NAVIGATION --- */
+        header {
+            background: var(--primary);
+            color: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .logo {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            font-size: 0.85rem;
+            color: #e2e8f0;
+            position: relative;
+            cursor: pointer;
+            white-space: nowrap;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--secondary);
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background: var(--secondary);
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--secondary);
+        }
+
+        /* --- 4. PAGE SECTIONS (SPA Logic) --- */
+        .page-section {
+            display: none;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* --- 5. HOME HERO --- */
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1600');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 120px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+            color: #cbd5e1;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 16px;
+            border-radius: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 25px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .stat-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+
+        /* --- 6. SERVICES CARDS --- */
+        .services-container {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+            border-bottom: 4px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-bottom-color: var(--secondary);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            background: #eff6ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--accent);
+            font-size: 1.8rem;
+        }
+
+        .service-card h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        /* --- 7. ABOUT SECTION --- */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-img {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .check-list li {
+            margin-bottom: 10px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .check-list i {
+            color: var(--secondary);
+        }
+
+        /* --- 8. REVIEWS --- */
+        .testimonial-card {
+            background: var(--white);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            position: relative;
+            text-align: center;
+        }
+
+        .testimonial-card::before {
+            content: '\\f10d';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            font-size: 3rem;
+            color: #e2e8f0;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .stars {
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+
+        .review-text {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #334155;
+            margin-bottom: 20px;
+        }
+
+        .reviewer {
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .review-cta {
+            background: linear-gradient(135deg, var(--accent), #2563eb);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .review-cta h3 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        /* --- 9. CONTACT FORM & INFO --- */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-info {
+            background: var(--primary);
+            color: var(--white);
+            padding: 40px;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+        .info-item i {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        .contact-form {
+            padding: 40px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        /* --- 10. BOOKING CALENDAR --- */
+        .booking-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .booking-content {
+            padding: 40px;
+        }
+
+        /* --- 11. AI CHATBOT --- */
+        .chatbot-toggle {
+            width: 60px;
+            height: 60px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: var(--transition);
+        }
+
+        .chatbot-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .chatbot-window {
+            position: fixed;
+            bottom: 180px;
+            right: 30px;
+            width: 350px;
+            height: 500px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            display: none;
+            flex-direction: column;
+            z-index: 2001;
+        }
+
+        .chatbot-window.active {
+            display: flex;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .chatbot-header {
+            background: var(--accent);
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .chatbot-close {
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        .chatbot-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background: #f8fafc;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .message.bot {
+            justify-content: flex-start;
+        }
+
+        .message.user {
+            justify-content: flex-end;
+        }
+
+        .message-bubble {
+            max-width: 70%;
+            padding: 10px 15px;
+            border-radius: 12px;
+        }
+
+        .message.bot .message-bubble {
+            background: white;
+            border: 1px solid #e2e8f0;
+        }
+
+        .message.user .message-bubble {
+            background: var(--accent);
+            color: white;
+        }
+
+        .chatbot-input {
+            display: flex;
+            padding: 15px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .chatbot-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            margin-right: 10px;
+        }
+
+        .chatbot-input button {
+            padding: 10px 20px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .quick-replies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .quick-reply {
+            padding: 8px 12px;
+            background: white;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .quick-reply:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        /* --- 12. STICKY BUTTONS --- */
+        .sticky-btns {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 2000;
+        }
+
+        .float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-btn {
+            background-color: #25D366;
+        }
+
+        .phone-btn {
+            background-color: var(--primary);
+            border: 2px solid var(--white);
+        }
+
+        /* --- PORTFOLIO GALLERY --- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            aspect-ratio: 4 / 3;
+            display: block;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            display: none;
+        }
+
+        .gallery-overlay span {
+            color: var(--white);
+            font-weight: 700;
+            transform: translateY(20px);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay span {
+            transform: translateY(0);
+        }
+
+        /* --- 15. FOOTER --- */
+        .site-footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            padding: 70px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-section h4 {
+            color: var(--white);
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #334155;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .branding-line {
+            color: #94a3b8;
+            margin: 0 !important;
+        }
+
+        .branding-line a {
+            color: #cbd5e1;
+            text-decoration: underline;
+        }
+
+        .branding-line a:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: #1e293b;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--secondary);
+            color: var(--primary);
+        }
+
+        /* --- 16. RESPONSIVE --- */
+        @media (max-width: 900px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--primary);
+                flex-direction: column;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .about-grid,
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .sticky-btns {
+                bottom: 80px;
+                right: 20px;
+            }
+
+            .chatbot-window {
+                width: 90%;
+                right: 5%;
+            }
+
+            .mobile-bar {
+                display: flex;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                z-index: 1999;
+                box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+                justify-content: space-around;
+                padding: 10px 0;
+            }
+
+            .mobile-link {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 0.75rem;
+                color: var(--text-light);
+                cursor: pointer;
+                background: transparent;
+                border: none;
+                padding: 0;
+                outline: none;
+            }
+
+            .mobile-link i {
+                font-size: 1.2rem;
+                margin-bottom: 4px;
+            }
+
+            .mobile-link.active {
+                color: var(--primary);
+            }
+        }
+
+        @media (min-width: 769px) {
+            .mobile-bar {
+                display: none;
+            }
+        }
+
+        .service-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2500;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .service-modal.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .service-modal-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.3s ease;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .service-modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .service-modal-header h2 {
+            color: var(--primary-dark);
+            font-size: 1.8rem;
+            margin: 0;
+            flex: 1;
+        }
+
+        .service-modal-close {
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: var(--text-muted);
+            transition: color 0.3s;
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .service-modal-close:hover {
+            color: var(--primary);
+        }
+
+        .service-details-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 30px;
+        }
+
+        .service-details-list li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .service-details-list li:before {
+            content: "\\2713";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .service-modal-cta {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .service-modal-cta button {
+            flex: 1;
+        }
+
+        @media (max-width: 600px) {
+            .service-modal-content {
+                padding: 30px 20px;
+                border-radius: 15px;
+            }
+
+            .service-modal-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .service-modal-cta {
+                flex-direction: column;
+            }
+        }
+
+        .demo-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(8px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .demo-modal.active {
+            display: flex;
+        }
+
+        .demo-content {
+            background: white;
+            padding: 40px;
+            border-radius: 24px;
+            max-width: 450px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .demo-icon {
+            font-size: 3rem;
+            color: #fbbf24;
+            margin-bottom: 20px;
+        }
+
+        .demo-content h2 {
+            color: #0f172a;
+            margin-bottom: 12px;
+            font-size: 1.6rem;
+        }
+
+        .demo-content p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn-demo {
+            background: #0f172a;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Demo Notice Modal -->
+    <div class="demo-modal" id="demoModal">
+        <div class="demo-content">
+            <div class="demo-icon">✨</div>
+            <h2>Demo Version</h2>
+            <p>Note: These are AI generated reviews for demo. Actual Reviews from Google Maps will be shown on
+                purchasing a plan.</p>
+            <button class="btn-demo" onclick="document.getElementById('demoModal').classList.remove('active')">I
+                Understand</button>
+        </div>
+    </div>
+    <!-- Service Details Modal -->
+    <div class="service-modal" id="serviceModal">
+        <div class="service-modal-content">
+            <div class="service-modal-header">
+                <h2 id="serviceModalTitle">Service Name</h2>
+                <button class="service-modal-close" data-close-modal><i class="fas fa-times"></i></button>
+            </div>
+            <ul class="service-details-list" id="serviceDetailsList"></ul>
+            <div class="service-modal-cta">
+                <button class="btn btn-primary" data-modal-action="book">Book Now</button>
+                <button class="btn btn-outline" data-close-modal>Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <div class="logo"><img
+                    src="https://ui-avatars.com/api/?name=Mile+High+Fix&background=0f496c&color=fff&size=80"
+                    alt="Mile High Fix &amp; Haul LLC" style="height: 42px; width: auto; border-radius: 5px;"><span
+                    style="margin-left: 5px; font-weight: 900; color: var(--white); font-size: 0.95rem;">Mile High Fix
+                    &amp; Haul</span>
+            </div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><button class="nav-btn nav-link active" data-target="home" data-router="home">Home</button></li>
+                    <li><button class="nav-btn nav-link" data-target="about" data-router="about">About Us</button></li>
+                    <li><button class="nav-btn nav-link" data-target="services" data-router="services">Services</button>
+                    </li>
+                    <li><button class="nav-btn nav-link" data-target="pricing" data-router="pricing">Pricing</button>
+                    </li>
+                    <li><button class="nav-btn nav-link" data-target="portfolio"
+                            data-router="portfolio">Portfolio</button></li>
+                    <li><button class="nav-btn nav-link" data-target="reviews" data-router="reviews">Reviews</button>
+                    </li>
+                    <li><button class="nav-btn nav-link" data-target="booking" data-router="booking">Book
+                            Online</button></li>
+                    <li><button class="nav-btn nav-link" data-target="faqs" data-router="faqs">FAQs</button></li>
+                    <li><button data-router="contact" class="btn btn-primary"
+                            style="padding: 8px 20px; font-size: 0.8rem;">Get Quote</button></li>
+                </ul>
+            </nav>
+            <button class="hamburger nav-btn" data-toggle="menu" aria-label="Toggle Navigation">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 1. HOME PAGE -->
+    <section id="home" class="page-section active">
+        <div class="hero">
+            <div class="container">
+                <div class="badge">
+                    <i class="fas fa-star" style="color: #fbbf24;"></i> 5.0 Star Rated Service
+                </div>
+                <h1>Reliable Repairs &amp; Fast Hauling</h1>
+                <p>Your trusted handyman and junk removal experts serving Denver &amp; surrounding areas. Same day or
+                    next day service — honest pricing with no hidden fees.</p>
+                <div style="margin-top: 30px;">
+                    <button data-router="contact" class="btn btn-primary" style="margin-right: 15px;">Book Online
+                        Now</button>
+                    <a href="tel:7209850587" class="btn btn-outline">Call 720-985-0587</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: -30px; position: relative; z-index: 10;">
+        </div>
+
+        <div class="section-padding container">
+            <div class="section-header">
+                <h2>Our Core Services</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="grid services-container">
+                <div class="service-card" data-service-modal="tv-mounting" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-tv"></i></div>
+                    <h3>TV Mounting</h3>
+                    <p>Professional TV mounting for all sizes with wall type assessment.</p>
+                </div>
+                <div class="service-card" data-service-modal="furniture-assembly" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-couch"></i></div>
+                    <h3>Furniture Assembly</h3>
+                    <p>Expert furniture assembly for all brands. Quick, precise, hassle-free.</p>
+                </div>
+                <div class="service-card" data-service-modal="basic-plumbing" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-wrench"></i></div>
+                    <h3>Basic Plumbing</h3>
+                    <p>Fix leaks, unclog drains, faucet installations, and basic plumbing repairs.</p>
+                </div>
+                <div class="service-card" data-service-modal="basic-electrical" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-bolt"></i></div>
+                    <h3>Basic Electrical</h3>
+                    <p>Outlet repairs, switch replacements, light fixtures, and basic wiring.</p>
+                </div>
+                <div class="service-card" data-service-modal="drywall-repairs" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-hammer"></i></div>
+                    <h3>Drywall &amp; Door Repairs</h3>
+                    <p>Drywall patch, blind installation, door repair and installation.</p>
+                </div>
+                <div class="service-card" data-service-modal="junk-removal" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-truck"></i></div>
+                    <h3>Junk Removal</h3>
+                    <p>Fast, affordable junk hauling. Single items to full truck loads. Dump fees included.</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <button data-router="services" class="btn btn-outline"
+                    style="border-color: var(--primary); color: var(--primary);">View All Services</button>
+            </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div style="background: white; padding: 80px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose Mile High Fix &amp; Haul LLC?</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+                    <div style="text-align: center;">
+                        <div
+                            style="width: 80px; height: 80px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 2rem;">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: var(--primary);">Always on time</h3>
+                        <p style="color: var(--text-light);">Because we value your time</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div
+                            style="width: 80px; height: 80px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 2rem;">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: var(--primary);">Licensed &amp; Insured</h3>
+                        <p style="color: var(--text-light);">Professional service you can trust</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div
+                            style="width: 80px; height: 80px; background: var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 2rem;">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3 style="margin-bottom: 10px; color: var(--primary);">Affordable Prices</h3>
+                        <p style="color: var(--text-light);">Competitive pricing for all our services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="background: var(--white); padding: 60px 0; text-align: center; border-top: 1px solid #e2e8f0;">
+            <div class="container">
+                <h3 style="margin-bottom: 20px; color: var(--primary); font-size: 2rem;">Ready to Get Things Fixed?</h3>
+                <p style="margin-bottom: 30px; color: var(--text-light); font-size: 1.1rem;">Contact Justin today for a
+                    fast, affordable quote — same day service available!</p>
+                <button data-router="contact" class="btn btn-primary" style="margin-right: 15px;">Book an
+                    Appointment</button>
+                <button data-router="contact" class="btn btn-outline"
+                    style="border-color: var(--primary); color: var(--primary);">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. ABOUT PAGE -->
+    <section id="about" class="page-section">
+        <div class="section-padding container">
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800"
+                        alt="Handyman &amp; Junk Removal tools">
+                </div>
+                <div>
+                    <div class="section-header" style="text-align: left;">
+                        <h2>About Mile High Fix &amp; Haul LLC</h2>
+                        <div class="divider" style="margin: 0;"></div>
+                    </div>
+                    <p style="margin-bottom: 20px; font-size: 1.1rem;">
+                        Mile High Fix &amp; Haul LLC is Denver's premier handyman and junk removal service. Owned and
+                        operated by Justin, we bring fast, reliable repairs and hauling to your doorstep. From TV
+                        mounting and furniture assembly to plumbing, electrical, drywall repairs, and full-scale junk
+                        hauling — we handle it all with honest pricing and professional service.
+                    </p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check-circle"></i>Fast, reliable, and affordable service</li>
+                        <li><i class="fas fa-check-circle"></i>Fully insured &amp; experienced team</li>
+                        <li><i class="fas fa-check-circle"></i> Honest pricing with no hidden fees</li>
+                        <li><i class="fas fa-check-circle"></i> Same day or next day availability</li>
+                        <li><i class="fas fa-check-circle"></i> Bundle deals for maximum savings</li>
+                        <li><i class="fas fa-check-circle"></i> Serving Denver &amp; surrounding areas</li>
+                    </ul>
+                </div>
+            </div>
+            <div
+                style="margin-top: 60px; text-align: center; background: var(--bg-light); padding: 50px; border-radius: 12px; box-shadow: var(--shadow);">
+                <h3 style="margin-bottom: 20px; color: var(--primary); font-size: 1.8rem;">Let's discuss your next
+                    project</h3>
+                <p style="margin-bottom: 30px; color: var(--text-light);">We'd love to add you to our list of satisfied
+                    customers.</p>
+                <button data-router="contact" class="btn btn-primary">Get a Quote</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SERVICES PAGE -->
+    <section id="services" class="page-section">
+        <div class="section-padding container">
+            <div class="section-header">
+                <h2>All Services</h2>
+                <div class="divider"></div>
+                <p style="margin-top: 15px; color: var(--text-light);">Comprehensive home solutions for every need.</p>
+            </div>
+
+            <div class="grid services-container">
+                <div class="service-card" data-service-modal="tv-mounting" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-tv"></i></div>
+                    <h3>TV Mounting</h3>
+                    <p>Professional TV mounting for all sizes with wall type assessment.</p>
+                </div>
+                <div class="service-card" data-service-modal="furniture-assembly" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-couch"></i></div>
+                    <h3>Furniture Assembly</h3>
+                    <p>Expert furniture assembly for all brands. Quick, precise, hassle-free.</p>
+                </div>
+                <div class="service-card" data-service-modal="basic-plumbing" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-wrench"></i></div>
+                    <h3>Basic Plumbing</h3>
+                    <p>Fix leaks, unclog drains, faucet installations, and basic plumbing repairs.</p>
+                </div>
+                <div class="service-card" data-service-modal="basic-electrical" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-bolt"></i></div>
+                    <h3>Basic Electrical</h3>
+                    <p>Outlet repairs, switch replacements, light fixtures, and basic wiring.</p>
+                </div>
+                <div class="service-card" data-service-modal="drywall-repairs" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-hammer"></i></div>
+                    <h3>Drywall &amp; Door Repairs</h3>
+                    <p>Drywall patch, blind installation, door repair and installation.</p>
+                </div>
+                <div class="service-card" data-service-modal="junk-removal" style="cursor: pointer;">
+                    <div class="icon-box"><i class="fas fa-truck"></i></div>
+                    <h3>Junk Removal</h3>
+                    <p>Fast, affordable junk hauling. Single items to full truck loads. Dump fees included.</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 60px;">
+                <button data-router="contact" class="btn btn-primary">Book a Service Online</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING PAGE -->
+    <section id="pricing" class="page-section">
+        <div class="section-padding container">
+            <div class="section-header">
+                <h2>Our Pricing</h2>
+                <div class="divider"></div>
+                <p style="margin-top: 15px; color: var(--text-light);">Transparent, honest pricing with no hidden fees.
+                    Bundle and save!</p>
+            </div>
+
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px;">
+
+                <!-- Handyman Services Card -->
+                <div
+                    style="background: var(--white); border-radius: 16px; box-shadow: var(--shadow-lg); overflow: hidden; border: 2px solid var(--secondary);">
+                    <div
+                        style="background: var(--primary); color: var(--white); padding: 24px 28px; text-align: center;">
+                        <i class="fas fa-tools"
+                            style="font-size: 2rem; margin-bottom: 10px; color: var(--secondary);"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 4px;">Handyman Services</h3>
+                        <p style="opacity: 0.85; font-size: 0.9rem;">Professional repairs &amp; installations</p>
+                    </div>
+                    <div style="padding: 28px;">
+                        <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+                            <tr style="border-bottom: 1px solid #e2e8f0;">
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;">Service Call
+                                </td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $75</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e2e8f0;">
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;">Hourly Rate</td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $75/hr</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e2e8f0;">
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;">TV Mounting
+                                    (32"&ndash;55")</td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $150</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e2e8f0;">
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;">TV Mounting
+                                    (56"&ndash;75")</td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $200</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e2e8f0;">
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;">TV Mounting
+                                    (76"+)</td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $250</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e2e8f0;">
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;">Furniture
+                                    Assembly</td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $75&ndash;$200</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e2e8f0;">
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;">Basic Plumbing
+                                </td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $100&ndash;$300</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e2e8f0;">
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;">Basic Electrical
+                                </td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $100&ndash;$300</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;">Drywall &amp;
+                                    Door Repairs</td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $100&ndash;$400</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Junk Removal Card -->
+                <div
+                    style="background: var(--white); border-radius: 16px; box-shadow: var(--shadow-lg); overflow: hidden; border: 2px solid var(--secondary);">
+                    <div
+                        style="background: var(--primary); color: var(--white); padding: 24px 28px; text-align: center;">
+                        <i class="fas fa-truck"
+                            style="font-size: 2rem; margin-bottom: 10px; color: var(--secondary);"></i>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 4px;">Junk Removal</h3>
+                        <p style="opacity: 0.85; font-size: 0.9rem;">Fast &amp; affordable hauling services</p>
+                    </div>
+                    <div style="padding: 28px;">
+                        <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+                            <tr style="border-bottom: 1px solid #e2e8f0;">
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;">Single Item
+                                    Pickup</td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $75&ndash;$150</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e2e8f0;">
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;">Mattress Removal
+                                </td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $100</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e2e8f0;">
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;">Appliance
+                                    Removal</td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $100&ndash;$175</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e2e8f0;">
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;"><i
+                                        class="fas fa-truck" style="color: var(--secondary); margin-right: 6px;"></i>1/4
+                                    Truck Load</td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $150</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e2e8f0;">
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;"><i
+                                        class="fas fa-truck" style="color: var(--secondary); margin-right: 6px;"></i>1/2
+                                    Truck Load</td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $300</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #e2e8f0;">
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;"><i
+                                        class="fas fa-truck" style="color: var(--secondary); margin-right: 6px;"></i>3/4
+                                    Truck Load</td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $400</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px 0; color: var(--text-dark); font-weight: 500;"><i
+                                        class="fas fa-truck"
+                                        style="color: var(--secondary); margin-right: 6px;"></i>Full Truck Load</td>
+                                <td
+                                    style="padding: 12px 0; text-align: right; font-weight: 700; color: var(--primary);">
+                                    $500</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bundle Deals -->
+            <div
+                style="margin-top: 50px; background: linear-gradient(135deg, var(--primary), #1a6b9a); border-radius: 16px; padding: 40px; color: var(--white); text-align: center; box-shadow: var(--shadow-lg);">
+                <i class="fas fa-tags" style="font-size: 2.5rem; margin-bottom: 15px; color: var(--secondary);"></i>
+                <h3 style="font-size: 1.8rem; margin-bottom: 10px;">Bundle Deals &amp; Save!</h3>
+                <p style="opacity: 0.9; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Combine handyman services with junk removal for exclusive bundle pricing. More services = more
+                    savings!</p>
+                <div class="grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 700px; margin: 0 auto 30px;">
+                    <div
+                        style="background: rgba(255,255,255,0.15); border-radius: 12px; padding: 20px; backdrop-filter: blur(5px);">
+                        <div style="font-size: 2rem; font-weight: 700; color: var(--secondary);">10% OFF</div>
+                        <div style="font-size: 0.9rem; opacity: 0.9;">2 Services Combined</div>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.15); border-radius: 12px; padding: 20px; backdrop-filter: blur(5px);">
+                        <div style="font-size: 2rem; font-weight: 700; color: var(--secondary);">15% OFF</div>
+                        <div style="font-size: 0.9rem; opacity: 0.9;">3+ Services Combined</div>
+                    </div>
+                    <div
+                        style="background: rgba(255,255,255,0.15); border-radius: 12px; padding: 20px; backdrop-filter: blur(5px);">
+                        <div style="font-size: 2rem; font-weight: 700; color: var(--secondary);">Custom</div>
+                        <div style="font-size: 0.9rem; opacity: 0.9;">Large Jobs &mdash; Call for Quote</div>
+                    </div>
+                </div>
+                <button data-router="contact" class="btn btn-primary"
+                    style="background: var(--secondary); color: var(--primary); font-weight: 700; padding: 14px 36px; font-size: 1.05rem;">Get
+                    a Free Quote</button>
+            </div>
+
+            <p style="text-align: center; margin-top: 30px; color: var(--text-light); font-size: 0.85rem;">* Prices may
+                vary based on complexity. Contact us for a personalized quote.</p>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO PAGE -->
+    <section id="portfolio" class="page-section">
+        <div class="section-padding container">
+            <div class="section-header">
+                <h2>Our Portfolio</h2>
+                <div class="divider"></div>
+                <p style="margin-top: 15px; color: var(--text-light);">A showcase of our recent projects and quality
+                    workmanship.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <a href="#" data-action="prevent" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600" alt="Project 1">
+                    <div class="gallery-overlay"><span>View Project</span></div>
+                </a>
+                <a href="#" data-action="prevent" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600" alt="Project 2">
+                    <div class="gallery-overlay"><span>View Project</span></div>
+                </a>
+                <a href="#" data-action="prevent" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600" alt="Project 3">
+                    <div class="gallery-overlay"><span>View Project</span></div>
+                </a>
+                <a href="#" data-action="prevent" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=600" alt="Project 4">
+                    <div class="gallery-overlay"><span>View Project</span></div>
+                </a>
+                <a href="#" data-action="prevent" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600" alt="Project 5">
+                    <div class="gallery-overlay"><span>View Project</span></div>
+                </a>
+                <a href="#" data-action="prevent" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1523413363574-c30aa1c2a516?w=600" alt="Project 6">
+                    <div class="gallery-overlay"><span>View Project</span></div>
+                </a>
+            </div>
+
+            <div
+                style="margin-top: 60px; text-align: center; background: var(--white); padding: 50px; border-radius: 12px; box-shadow: var(--shadow);">
+                <h3 style="margin-bottom: 20px; color: var(--primary); font-size: 1.8rem;">Like what you see?</h3>
+                <p style="margin-bottom: 30px; color: var(--text-light);">Let's bring your next project to life.</p>
+                <button data-router="contact" class="btn btn-primary">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. REVIEWS PAGE -->
+    <section id="reviews" class="page-section">
+        <div class="section-padding container">
+            <div class="section-header">
+                <h2>What Clients Say</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">
+                    "Justin was incredible! He mounted our 65-inch TV perfectly, patched up drywall, and hauled away old
+                    furniture — all in one visit. Honest pricing and super professional. Will definitely use again!"
+                </p>
+                <div class="reviewer">Sarah M.</div>
+                <small style="color: #94a3b8; display: block; margin-top: 5px;">AI Generated for Demo</small>
+            </div>
+
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); margin-top: 40px;">
+                <div class="service-card" style="text-align: left; padding: 25px;">
+                    <div class="stars" style="font-size: 0.9rem;"><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></div>
+                    <p style="font-size: 0.95rem; margin-bottom: 10px;">"Fast, affordable, and reliable. Had my
+                        furniture assembled the same day I called. No hidden fees, great communication, and excellent
+                        workmanship. Highly recommend!"</p>
+                    <div style="font-weight: 700; font-size: 0.9rem; color: var(--primary);">- Mike R.</div>
+                </div>
+                <div class="service-card" style="text-align: left; padding: 25px;">
+                    <div class="stars" style="font-size: 0.9rem;"><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></div>
+                    <p style="font-size: 0.95rem; margin-bottom: 10px;">"Needed a full truck load of junk removed from a
+                        move-out. The price was exactly what was quoted — no surprises. Justin was on time and did a
+                        fantastic job. 10/10!"</p>
+                    <div style="font-weight: 700; font-size: 0.9rem; color: var(--primary);">- Lisa T.</div>
+                </div>
+                <div class="service-card" style="text-align: left; padding: 25px;">
+                    <div class="stars" style="font-size: 0.9rem;"><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i></div>
+                    <p style="font-size: 0.95rem; margin-bottom: 10px;">"Best handyman service in Denver! Justin fixed
+                        our plumbing, mounted the TV, and hauled away all the old stuff. One call, everything done.
+                        Amazing!"</p>
+                    <div style="font-weight: 700; font-size: 0.9rem; color: var(--primary);">- David K.</div>
+                </div>
+            </div>
+
+            <!-- Review CTA -->
+            <div class="review-cta">
+                <h3>Love Our Service?</h3>
+                <p style="margin-bottom: 20px;">Leave us a review and help others find quality services!</p>
+                <a href="#" target="_blank" class="btn" style="background: white; color: var(--accent);">
+                    <i class="fab fa-google"></i> Leave a Google Review
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. BOOK ONLINE PAGE -->
+    <section id="booking" class="page-section">
+        <div class="section-padding container">
+            <div class="section-header">
+                <h2>Book Your Appointment</h2>
+                <div class="divider"></div>
+                <p style="margin-top: 15px; color: var(--text-light);">Pick a service, choose your date &amp; time, and
+                    confirm. It's that easy!</p>
+            </div>
+
+            <div id="scheduler-widget"
+                style="max-width: 900px; margin: 40px auto; background: var(--white); border-radius: 16px; box-shadow: var(--shadow-lg); overflow: hidden; border: 1px solid #e2e8f0;">
+
+                <!-- Step indicators -->
+                <div style="display: flex; border-bottom: 1px solid #e2e8f0; background: #f8fafc;">
+                    <div class="sched-step active" data-step="1"
+                        style="flex:1; text-align:center; padding: 18px 10px; cursor: pointer; font-weight: 600; font-size: 0.85rem; color: var(--text-light); border-bottom: 3px solid transparent; transition: all 0.3s;">
+                        <span
+                            style="display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background: var(--primary); color:#fff; font-size:0.75rem; margin-right:6px;">1</span>
+                        Select Service
+                    </div>
+                    <div class="sched-step" data-step="2"
+                        style="flex:1; text-align:center; padding: 18px 10px; cursor: pointer; font-weight: 600; font-size: 0.85rem; color: var(--text-light); border-bottom: 3px solid transparent; transition: all 0.3s;">
+                        <span
+                            style="display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background: #cbd5e1; color:#fff; font-size:0.75rem; margin-right:6px;">2</span>
+                        Pick Date &amp; Time
+                    </div>
+                    <div class="sched-step" data-step="3"
+                        style="flex:1; text-align:center; padding: 18px 10px; cursor: pointer; font-weight: 600; font-size: 0.85rem; color: var(--text-light); border-bottom: 3px solid transparent; transition: all 0.3s;">
+                        <span
+                            style="display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; border-radius:50%; background: #cbd5e1; color:#fff; font-size:0.75rem; margin-right:6px;">3</span>
+                        Your Details
+                    </div>
+                </div>
+
+                <!-- STEP 1: Service Selection -->
+                <div id="sched-panel-1" class="sched-panel" style="padding: 30px;">
+                    <h3 style="color: var(--primary); margin-bottom: 6px; font-size: 1.2rem;">What do you need help
+                        with?</h3>
+                    <p style="color: var(--text-light); margin-bottom: 24px; font-size: 0.9rem;">Select a service to
+                        continue.</p>
+                    <div id="sched-services"
+                        style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px;">
+                    </div>
+                </div>
+
+                <!-- STEP 2: Date & Time -->
+                <div id="sched-panel-2" class="sched-panel" style="padding: 30px; display: none;">
+                    <h3 style="color: var(--primary); margin-bottom: 6px; font-size: 1.2rem;">Pick a Date &amp; Time
+                    </h3>
+                    <p style="color: var(--text-light); margin-bottom: 24px; font-size: 0.9rem;"
+                        id="sched-selected-svc-label"></p>
+
+                    <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+                        <!-- Calendar -->
+                        <div style="flex: 1; min-width: 280px;">
+                            <div
+                                style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+                                <button onclick="schedChangeMonth(-1)"
+                                    style="background:none; border:1px solid #e2e8f0; border-radius:8px; padding:6px 12px; cursor:pointer; color: var(--primary); font-weight:700;">&larr;</button>
+                                <span id="sched-month-label"
+                                    style="font-weight: 700; color: var(--text-dark); font-size: 1.05rem;"></span>
+                                <button onclick="schedChangeMonth(1)"
+                                    style="background:none; border:1px solid #e2e8f0; border-radius:8px; padding:6px 12px; cursor:pointer; color: var(--primary); font-weight:700;">&rarr;</button>
+                            </div>
+                            <div
+                                style="display:grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align:center; margin-bottom: 6px;">
+                                <div
+                                    style="font-size:0.75rem; font-weight:700; color:var(--text-light); padding:6px 0;">
+                                    SUN</div>
+                                <div
+                                    style="font-size:0.75rem; font-weight:700; color:var(--text-light); padding:6px 0;">
+                                    MON</div>
+                                <div
+                                    style="font-size:0.75rem; font-weight:700; color:var(--text-light); padding:6px 0;">
+                                    TUE</div>
+                                <div
+                                    style="font-size:0.75rem; font-weight:700; color:var(--text-light); padding:6px 0;">
+                                    WED</div>
+                                <div
+                                    style="font-size:0.75rem; font-weight:700; color:var(--text-light); padding:6px 0;">
+                                    THU</div>
+                                <div
+                                    style="font-size:0.75rem; font-weight:700; color:var(--text-light); padding:6px 0;">
+                                    FRI</div>
+                                <div
+                                    style="font-size:0.75rem; font-weight:700; color:var(--text-light); padding:6px 0;">
+                                    SAT</div>
+                            </div>
+                            <div id="sched-calendar-days"
+                                style="display:grid; grid-template-columns: repeat(7, 1fr); gap: 4px; text-align:center;">
+                            </div>
+                        </div>
+
+                        <!-- Time Slots -->
+                        <div style="flex: 1; min-width: 200px;">
+                            <p id="sched-date-label"
+                                style="font-weight: 600; color: var(--text-dark); margin-bottom: 14px; font-size: 0.95rem;">
+                                Select a date first</p>
+                            <div id="sched-time-slots"
+                                style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;"></div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+                        <button onclick="schedGoStep(1)"
+                            style="background:none; border:1px solid #e2e8f0; border-radius:8px; padding:10px 24px; cursor:pointer; font-weight:600; color: var(--text-light);">Back</button>
+                        <button id="sched-btn-to-3" onclick="schedGoStep(3)" disabled
+                            style="background: var(--primary); color:#fff; border:none; border-radius:8px; padding:10px 28px; cursor:pointer; font-weight:600; font-size:0.95rem; opacity:0.5; transition: all 0.3s;">Continue</button>
+                    </div>
+                </div>
+
+                <!-- STEP 3: Your Details -->
+                <div id="sched-panel-3" class="sched-panel" style="padding: 30px; display: none;">
+                    <h3 style="color: var(--primary); margin-bottom: 6px; font-size: 1.2rem;">Confirm Your Details</h3>
+                    <p style="color: var(--text-light); margin-bottom: 24px; font-size: 0.9rem;"
+                        id="sched-summary-label"></p>
+
+                    <div style="max-width: 480px; margin: 0 auto;">
+                        <div style="margin-bottom: 16px;">
+                            <label
+                                style="display:block; font-weight:600; color: var(--text-dark); margin-bottom:6px; font-size:0.85rem;">Full
+                                Name *</label>
+                            <input type="text" id="sched-name" placeholder="Justin Smith"
+                                style="width:100%; padding:12px 14px; border:1.5px solid #e2e8f0; border-radius:10px; font-size:0.95rem; color: var(--text-dark); outline:none; transition: border 0.2s;"
+                                onfocus="this.style.borderColor='var(--primary)'"
+                                onblur="this.style.borderColor='#e2e8f0'">
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <label
+                                style="display:block; font-weight:600; color: var(--text-dark); margin-bottom:6px; font-size:0.85rem;">Phone
+                                Number *</label>
+                            <input type="tel" id="sched-phone" placeholder="(720) 985-0587"
+                                style="width:100%; padding:12px 14px; border:1.5px solid #e2e8f0; border-radius:10px; font-size:0.95rem; color: var(--text-dark); outline:none; transition: border 0.2s;"
+                                onfocus="this.style.borderColor='var(--primary)'"
+                                onblur="this.style.borderColor='#e2e8f0'">
+                        </div>
+                        <div style="margin-bottom: 16px;">
+                            <label
+                                style="display:block; font-weight:600; color: var(--text-dark); margin-bottom:6px; font-size:0.85rem;">Address</label>
+                            <input type="text" id="sched-address" placeholder="123 Main St, Denver, CO"
+                                style="width:100%; padding:12px 14px; border:1.5px solid #e2e8f0; border-radius:10px; font-size:0.95rem; color: var(--text-dark); outline:none; transition: border 0.2s;"
+                                onfocus="this.style.borderColor='var(--primary)'"
+                                onblur="this.style.borderColor='#e2e8f0'">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label
+                                style="display:block; font-weight:600; color: var(--text-dark); margin-bottom:6px; font-size:0.85rem;">Notes
+                                (optional)</label>
+                            <textarea id="sched-notes" placeholder="Anything we should know..." rows="3"
+                                style="width:100%; padding:12px 14px; border:1.5px solid #e2e8f0; border-radius:10px; font-size:0.95rem; color: var(--text-dark); outline:none; resize:vertical; transition: border 0.2s;"
+                                onfocus="this.style.borderColor='var(--primary)'"
+                                onblur="this.style.borderColor='#e2e8f0'"></textarea>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+                        <button onclick="schedGoStep(2)"
+                            style="background:none; border:1px solid #e2e8f0; border-radius:8px; padding:10px 24px; cursor:pointer; font-weight:600; color: var(--text-light);">Back</button>
+                        <button onclick="schedConfirm()"
+                            style="background: var(--success); color:#fff; border:none; border-radius:8px; padding:12px 32px; cursor:pointer; font-weight:700; font-size:1rem; transition: all 0.3s;"><i
+                                class="fas fa-check-circle" style="margin-right:6px;"></i>Confirm Booking</button>
+                    </div>
+                </div>
+
+                <!-- STEP 4: Confirmation -->
+                <div id="sched-panel-4" class="sched-panel"
+                    style="padding: 50px 30px; display: none; text-align: center;">
+                    <div
+                        style="width:80px; height:80px; border-radius:50%; background: #d1fae5; display:inline-flex; align-items:center; justify-content:center; margin-bottom:20px;">
+                        <i class="fas fa-check" style="font-size:2rem; color: var(--success);"></i>
+                    </div>
+                    <h3 style="color: var(--text-dark); font-size: 1.5rem; margin-bottom: 10px;">Booking Confirmed!</h3>
+                    <p style="color: var(--text-light); margin-bottom: 8px; font-size: 1rem;" id="sched-confirm-msg">
+                    </p>
+                    <p style="color: var(--text-light); margin-bottom: 30px; font-size: 0.9rem;">Justin will reach out
+                        to confirm your appointment at <strong style="color: var(--primary);">720-985-0587</strong>.</p>
+                    <button onclick="schedReset()" class="btn btn-primary">Book Another Appointment</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        (function () {
+            const services = [
+                { name: 'TV Mounting', icon: 'fa-tv', duration: '1 hr', price: 'From $150' },
+                { name: 'Furniture Assembly', icon: 'fa-couch', duration: '1-2 hrs', price: '$75-$200' },
+                { name: 'Basic Plumbing', icon: 'fa-faucet', duration: '1-2 hrs', price: '$100-$300' },
+                { name: 'Basic Electrical', icon: 'fa-bolt', duration: '1-2 hrs', price: '$100-$300' },
+                { name: 'Drywall & Door Repairs', icon: 'fa-door-open', duration: '1-3 hrs', price: '$100-$400' },
+                { name: 'Junk Removal', icon: 'fa-truck', duration: '1-2 hrs', price: 'From $75' },
+                { name: 'Bundle Deal', icon: 'fa-tags', duration: 'Varies', price: 'Save 10-15%' }
+            ];
+            const timeSlots = ['8:00 AM', '9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM'];
+            let selectedService = null, selectedDate = null, selectedTime = null;
+            let calMonth, calYear;
+
+            const now = new Date();
+            calMonth = now.getMonth();
+            calYear = now.getFullYear();
+
+            // Render services
+            const svcContainer = document.getElementById('sched-services');
+            services.forEach(s => {
+                const div = document.createElement('div');
+                div.style.cssText = 'border:2px solid #e2e8f0; border-radius:12px; padding:18px; cursor:pointer; transition:all 0.2s; display:flex; align-items:center; gap:14px;';
+                div.innerHTML = '<div style="width:44px;height:44px;border-radius:10px;background:rgba(15,73,108,0.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="fas ' + s.icon + '" style="color:var(--primary);font-size:1.1rem;"></i></div><div><div style="font-weight:600;color:var(--text-dark);font-size:0.95rem;">' + s.name + '</div><div style="font-size:0.8rem;color:var(--text-light);">' + s.duration + ' &middot; ' + s.price + '</div></div>';
+                div.onmouseenter = function () { if (selectedService !== s.name) this.style.borderColor = 'var(--primary)'; this.style.background = '#f0f9ff'; };
+                div.onmouseleave = function () { if (selectedService !== s.name) this.style.borderColor = '#e2e8f0'; this.style.background = ''; };
+                div.onclick = function () {
+                    selectedService = s.name;
+                    document.querySelectorAll('#sched-services > div').forEach(d => { d.style.borderColor = '#e2e8f0'; d.style.background = ''; });
+                    this.style.borderColor = 'var(--primary)'; this.style.background = '#eff6ff';
+                    setTimeout(() => schedGoStep(2), 300);
+                };
+                svcContainer.appendChild(div);
+            });
+
+            window.schedGoStep = function (step) {
+                document.querySelectorAll('.sched-panel').forEach(p => p.style.display = 'none');
+                document.getElementById('sched-panel-' + step).style.display = 'block';
+                document.querySelectorAll('.sched-step').forEach(s => {
+                    const sn = parseInt(s.getAttribute('data-step'));
+                    const badge = s.querySelector('span');
+                    if (sn <= step) { s.style.color = 'var(--primary)'; s.style.borderBottomColor = 'var(--primary)'; badge.style.background = 'var(--primary)'; }
+                    else { s.style.color = 'var(--text-light)'; s.style.borderBottomColor = 'transparent'; badge.style.background = '#cbd5e1'; }
+                });
+                if (step === 2) {
+                    document.getElementById('sched-selected-svc-label').textContent = selectedService + ' — Choose your preferred date & time';
+                    renderCalendar();
+                }
+                if (step === 3) {
+                    const opts = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+                    const dStr = selectedDate.toLocaleDateString('en-US', opts);
+                    document.getElementById('sched-summary-label').textContent = selectedService + ' — ' + dStr + ' at ' + selectedTime;
+                }
+            };
+
+            window.schedChangeMonth = function (dir) {
+                calMonth += dir;
+                if (calMonth > 11) { calMonth = 0; calYear++; }
+                if (calMonth < 0) { calMonth = 11; calYear--; }
+                renderCalendar();
+            };
+
+            function renderCalendar() {
+                const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                document.getElementById('sched-month-label').textContent = months[calMonth] + ' ' + calYear;
+                const container = document.getElementById('sched-calendar-days');
+                container.innerHTML = '';
+                const firstDay = new Date(calYear, calMonth, 1).getDay();
+                const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+                const today = new Date(); today.setHours(0, 0, 0, 0);
+
+                for (let i = 0; i < firstDay; i++) {
+                    const e = document.createElement('div');
+                    e.style.padding = '10px';
+                    container.appendChild(e);
+                }
+                for (let d = 1; d <= daysInMonth; d++) {
+                    const dt = new Date(calYear, calMonth, d);
+                    const el = document.createElement('div');
+                    el.textContent = d;
+                    const isPast = dt < today;
+                    el.style.cssText = 'padding:10px; border-radius:10px; font-weight:500; font-size:0.9rem; transition:all 0.15s;';
+                    if (isPast) {
+                        el.style.color = '#cbd5e1'; el.style.cursor = 'default';
+                    } else {
+                        el.style.cursor = 'pointer'; el.style.color = 'var(--text-dark)';
+                        if (selectedDate && dt.getTime() === selectedDate.getTime()) {
+                            el.style.background = 'var(--primary)'; el.style.color = '#fff';
+                        }
+                        el.onmouseenter = function () { if (!selectedDate || dt.getTime() !== selectedDate.getTime()) this.style.background = '#e0f2fe'; };
+                        el.onmouseleave = function () { if (!selectedDate || dt.getTime() !== selectedDate.getTime()) this.style.background = ''; };
+                        el.onclick = function () {
+                            selectedDate = dt; selectedTime = null;
+                            renderCalendar(); renderTimeSlots();
+                            document.getElementById('sched-btn-to-3').disabled = true;
+                            document.getElementById('sched-btn-to-3').style.opacity = '0.5';
+                        };
+                    }
+                    container.appendChild(el);
+                }
+            }
+
+            function renderTimeSlots() {
+                const container = document.getElementById('sched-time-slots');
+                container.innerHTML = '';
+                if (!selectedDate) { return; }
+                const opts = { weekday: 'short', month: 'short', day: 'numeric' };
+                document.getElementById('sched-date-label').textContent = selectedDate.toLocaleDateString('en-US', opts);
+                // Simulate some slots unavailable randomly (seeded by date)
+                const seed = selectedDate.getDate();
+                timeSlots.forEach((t, i) => {
+                    const btn = document.createElement('button');
+                    btn.textContent = t;
+                    const avail = !((seed + i) % 5 === 0); // some fake unavailability
+                    btn.style.cssText = 'padding:12px; border-radius:8px; font-weight:500; font-size:0.88rem; cursor:pointer; transition:all 0.2s; border:1.5px solid #e2e8f0; background:#fff; color:var(--text-dark);';
+                    if (!avail) {
+                        btn.style.color = '#cbd5e1'; btn.style.cursor = 'default'; btn.style.borderColor = '#f1f5f9'; btn.disabled = true;
+                    } else {
+                        if (selectedTime === t) { btn.style.background = 'var(--primary)'; btn.style.color = '#fff'; btn.style.borderColor = 'var(--primary)'; }
+                        btn.onmouseenter = function () { if (selectedTime !== t) { this.style.borderColor = 'var(--primary)'; this.style.background = '#f0f9ff'; } };
+                        btn.onmouseleave = function () { if (selectedTime !== t) { this.style.borderColor = '#e2e8f0'; this.style.background = '#fff'; } };
+                        btn.onclick = function () {
+                            selectedTime = t;
+                            renderTimeSlots();
+                            document.getElementById('sched-btn-to-3').disabled = false;
+                            document.getElementById('sched-btn-to-3').style.opacity = '1';
+                        };
+                    }
+                    container.appendChild(btn);
+                });
+            }
+
+            window.schedConfirm = function () {
+                const name = document.getElementById('sched-name').value.trim();
+                const phone = document.getElementById('sched-phone').value.trim();
+                if (!name || !phone) { alert('Please enter your name and phone number.'); return; }
+                const opts = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+                const dStr = selectedDate.toLocaleDateString('en-US', opts);
+                document.getElementById('sched-confirm-msg').innerHTML = '<strong>' + selectedService + '</strong> on <strong>' + dStr + '</strong> at <strong>' + selectedTime + '</strong>';
+                schedGoStep(4);
+            };
+
+            window.schedReset = function () {
+                selectedService = null; selectedDate = null; selectedTime = null;
+                document.querySelectorAll('#sched-services > div').forEach(d => { d.style.borderColor = '#e2e8f0'; d.style.background = ''; });
+                document.getElementById('sched-name').value = '';
+                document.getElementById('sched-phone').value = '';
+                document.getElementById('sched-address').value = '';
+                document.getElementById('sched-notes').value = '';
+                document.getElementById('sched-btn-to-3').disabled = true;
+                document.getElementById('sched-btn-to-3').style.opacity = '0.5';
+                document.getElementById('sched-time-slots').innerHTML = '';
+                document.getElementById('sched-date-label').textContent = 'Select a date first';
+                calMonth = new Date().getMonth(); calYear = new Date().getFullYear();
+                schedGoStep(1);
+            };
+        })();
+    </script>
+
+    <!-- 8. FAQs PAGE -->
+    <section id="faqs" class="page-section">
+        <div class="section-padding container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <div class="divider"></div>
+                <p style="margin-top: 15px; color: var(--text-light);">Find answers to common questions about our
+                    services.</p>
+            </div>
+
+            <div style="max-width: 900px; margin: 50px auto;">
+                <!-- FAQ Item 1 -->
+                <div
+                    style="background: white; padding: 25px; margin-bottom: 20px; border-radius: 12px; box-shadow: var(--shadow); border-left: 4px solid var(--primary);">
+                    <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.1rem;">What areas do you
+                        serve?</h3>
+                    <p style="color: var(--text-light); line-height: 1.6;">We provide Handyman &amp; Junk Removal
+                        services
+                        throughout Denver, CO and surrounding areas. For service areas further out, please contact us to
+                        discuss availability.</p>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div
+                    style="background: white; padding: 25px; margin-bottom: 20px; border-radius: 12px; box-shadow: var(--shadow); border-left: 4px solid var(--primary);">
+                    <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.1rem;">What is your booking
+                        availability?</h3>
+                    <p style="color: var(--text-light); line-height: 1.6;">We offer online booking from 7 AM to 6 PM
+                        local time daily. Our standard operating days are Sunday to Saturday. Use our online booking
+                        system to
+                        schedule at your convenience or call 720-985-0587.</p>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div
+                    style="background: white; padding: 25px; margin-bottom: 20px; border-radius: 12px; box-shadow: var(--shadow); border-left: 4px solid var(--primary);">
+                    <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.1rem;">How should I prepare
+                        for my appointment?</h3>
+                    <p style="color: var(--text-light); line-height: 1.6;">No special preparation is needed! Simply
+                        ensure areas are accessible and clear of large obstacles. If you have specific
+                        instructions or concerns, mention them when booking. We'll handle the rest, including setup and
+                        cleanup.</p>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div
+                    style="background: white; padding: 25px; margin-bottom: 20px; border-radius: 12px; box-shadow: var(--shadow); border-left: 4px solid var(--primary);">
+                    <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.1rem;">Are you licensed and
+                        insured?</h3>
+                    <p style="color: var(--text-light); line-height: 1.6;">Yes! Mile High Fix &amp; Haul LLC is fully
+                        licensed
+                        and fully insured. We take safety seriously and maintain comprehensive liability coverage for
+                        all our work. Your home and property are protected with us.</p>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div
+                    style="background: white; padding: 25px; margin-bottom: 20px; border-radius: 12px; box-shadow: var(--shadow); border-left: 4px solid var(--primary);">
+                    <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.1rem;">Do you offer regular
+                        maintenance plans?</h3>
+                    <p style="color: var(--text-light); line-height: 1.6;">Absolutely! We offer flexible maintenance
+                        contracts for both residential and commercial clients. Regular upkeep keeps your property
+                        looking its best
+                        year-round. Bulk maintenance discounts are available. Contact us to discuss a
+                        customized plan.</p>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div
+                    style="background: white; padding: 25px; margin-bottom: 20px; border-radius: 12px; box-shadow: var(--shadow); border-left: 4px solid var(--primary);">
+                    <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.1rem;">What eco-friendly
+                        practices do you use?</h3>
+                    <p style="color: var(--text-light); line-height: 1.6;">We use environmentally safe cleaning
+                        solutions that are effective on all surfaces. Our methods minimize water waste and avoid
+                        harsh chemicals that could harm your landscaping or the environment.</p>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div
+                    style="background: white; padding: 25px; margin-bottom: 20px; border-radius: 12px; box-shadow: var(--shadow); border-left: 4px solid var(--primary);">
+                    <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.1rem;">What payment methods
+                        do you accept?</h3>
+                    <p style="color: var(--text-light); line-height: 1.6;">We accept all major credit cards, debit
+                        cards, and digital payments through our secure online booking system. Payment options are
+                        flexible and may include deposit arrangements for larger projects.</p>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div
+                    style="background: white; padding: 25px; margin-bottom: 20px; border-radius: 12px; box-shadow: var(--shadow); border-left: 4px solid var(--primary);">
+                    <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.1rem;">Still have
+                        questions?</h3>
+                    <p style="color: var(--text-light); line-height: 1.6;">If you can't find the answer here, feel free
+                        to reach out! Call us at <strong>720-985-0587</strong> or use our chat assistant on the
+                        website. Our team is available to help with any questions about our services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. CONTACT PAGE -->
+    <section id="contact" class="page-section">
+        <div class="section-padding container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="divider"></div>
+                <p style="margin-top: 10px; color: var(--text-muted);">Have questions? We're here to help!</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3 style="margin-bottom: 25px; font-size: 1.5rem;">Contact Info</h3>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Phone</strong><br>
+                            <a href="tel:7209850587" style="color: rgba(255,255,255,0.8);">+1 720-985-0587</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong><br>
+                            <span style="color: rgba(255,255,255,0.8);">Serving Denver, CO and surrounding areas</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong><br>
+                            <span style="color: rgba(255,255,255,0.8);">milehighfixandhaul@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Hours</strong><br>
+                            <span style="color: rgba(255,255,255,0.8);">Mon-Sat: 8AM - 6PM<br>Online Booking:
+                                7 AM to 6 PM local time</span>
+                        </div>
+                    </div>
+
+                    <div
+                        style="margin-top: 30px; height: 180px; background: rgba(0,0,0,0.2); border-radius: 12px; overflow: hidden;">
+
+                        https://www.google.com/maps?q=Denver+Colorado&output=embed
+
+                    </div>
+                </div>
+
+                <div class="contact-form" style="background: #1a1a2e; padding: 50px; color: white;">
+                    <form id="contactForm">
+                        <!-- Row 1: Name + Phone -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-bottom: 25px;">
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label class="form-label" style="color: #e2e8f0;">Full Name *</label>
+                                <input type="text" id="contactName" class="form-control" placeholder="Your full name"
+                                    required style="background: #2a2a3e; border-color: #3a3a4e; color: white;">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 0;">
+                                <label class="form-label" style="color: #e2e8f0;">Phone Number *</label>
+                                <input type="tel" id="contactPhone" class="form-control" placeholder="720-985-0587"
+                                    required style="background: #2a2a3e; border-color: #3a3a4e; color: white;">
+                            </div>
+                        </div>
+                        <!-- Address (required) -->
+                        <div class="form-group">
+                            <label class="form-label" style="color: #e2e8f0;">Address *</label>
+                            <input type="text" id="contactAddress" class="form-control" placeholder="Denver, CO"
+                                required style="background: #2a2a3e; border-color: #3a3a4e; color: white;">
+                        </div>
+                        <!-- Email (optional) -->
+                        <div class="form-group">
+                            <label class="form-label" style="color: #e2e8f0;">Email Address <span
+                                    style="color:#94a3b8; font-weight:400;">(optional)</span></label>
+                            <input type="email" id="contactEmail" class="form-control"
+                                placeholder="milehighfixandhaul@gmail.com"
+                                style="background: #2a2a3e; border-color: #3a3a4e; color: white;">
+                        </div>
+                        <!-- Service Type -->
+                        <div class="form-group">
+                            <label class="form-label" style="color: #e2e8f0;">Service Type</label>
+                            <select id="contactService" class="form-control"
+                                style="background: #2a2a3e; border-color: #3a3a4e; color: white; appearance: auto;">
+                                <option value="" style="color: #999;">Select service...</option>
+                                <option value="TV Mounting">TV Mounting</option>
+                                <option value="Furniture Assembly">Furniture Assembly</option>
+                                <option value="Basic Plumbing">Basic Plumbing</option>
+                                <option value="Basic Electrical">Basic Electrical</option>
+                                <option value="Drywall &amp; Door Repairs">Drywall &amp; Door Repairs</option>
+                                <option value="Junk Removal">Junk Removal</option>
+                            </select>
+                        </div>
+                        <!-- Message (optional) -->
+                        <div class="form-group">
+                            <label class="form-label" style="color: #e2e8f0;">Your Message <span
+                                    style="color:#94a3b8; font-weight:400;">(optional)</span></label>
+                            <textarea id="contactMessage" class="form-control" rows="4"
+                                placeholder="Tell us about your needs..."
+                                style="background: #2a2a3e; border-color: #3a3a4e; color: white; resize: vertical;"></textarea>
+                        </div>
+                        <!-- Disclaimer -->
+                        <p
+                            style="font-size: 0.82rem; color: #94a3b8; margin-bottom: 18px; text-align: center; line-height: 1.6; border: 1px solid #3a3a4e; border-radius: 8px; padding: 12px 16px; background: rgba(255,255,255,0.03);">
+                            <i class="fas fa-info-circle" style="color: var(--secondary); margin-right: 5px;"></i>
+                            <em>Please note: The quotation provided is an approximate quote only and is subject to
+                                change based on an in-person site visit.</em>
+                        </p>
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn"
+                            style="background: var(--secondary); color: #000; width: 100%; font-size: 1rem; font-weight: 700; padding: 18px; border-radius: 50px; letter-spacing: 1px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                            <i class="fas fa-paper-plane"></i> GET QUOTE
+                        </button>
+                        <p style="text-align: center; margin-top: 15px; font-size: 0.85rem; color: #94a3b8;">
+                            <i class="fas fa-lock" style="color: var(--secondary); margin-right: 5px;"></i>
+                            Your info is safe. We never share or sell customer data.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Mile High Fix &amp; Haul LLC</h4>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">Your trusted Handyman &amp; Junk Removal service
+                        in Denver, CO.
+                        Professional, reliable, and affordable home services.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-action="prevent"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" data-action="prevent"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" data-action="prevent"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-router="home">Home</a></li>
+                        <li><a href="#" data-router="about">About Us</a></li>
+                        <li><a href="#" data-router="services">Services</a></li>
+                        <li><a href="#" data-router="pricing">Pricing</a></li>
+                        <li><a href="#" data-router="portfolio">Portfolio</a></li>
+                        <li><a href="#" data-router="reviews">Reviews</a></li>
+                        <li><a href="#" data-router="booking">Book Online</a></li>
+                        <li><a href="#" data-router="faqs">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-router="services">TV Mounting</a></li>
+                        <li><a href="#" data-router="services">Furniture Assembly</a></li>
+                        <li><a href="#" data-router="services">Basic Plumbing</a></li>
+                        <li><a href="#" data-router="services">Basic Electrical</a></li>
+                        <li><a href="#" data-router="services">Drywall &amp; Door Repairs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li style="display:flex; align-items:flex-start; gap:10px;"><i class="fas fa-phone"
+                                style="color: var(--secondary); width: 20px; text-align:center; padding-top: 4px;"></i>720-985-0587
+                        </li>
+                        <li style="display:flex; align-items:flex-start; gap:10px;"><i class="fas fa-envelope"
+                                style="color: var(--secondary); width: 20px; text-align:center; padding-top: 4px;"></i>
+                            milehighfixandhaul@gmail.com</li>
+                        <li style="display:flex; align-items:flex-start; gap:10px;"><i class="fas fa-map-marker-alt"
+                                style="color: var(--secondary); width: 20px; text-align:center; padding-top: 4px;"></i>
+                            Denver, CO</li>
+                        <li style="margin-top: 15px;">
+                            <button data-router="contact" class="btn"
+                                style="background: var(--secondary); color: #000; padding: 10px 20px; width: 100%; border-radius: 8px;">BOOK
+                                NOW</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mile High Fix &amp; Haul LLC. All Rights Reserved.</p>
+                <p class="branding-line">Made with ❤️ by <a href="https://lonarx.us/" target="_blank">lonarx.us</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AI CHATBOT (Tier-2 Feature) -->
+
+    <div class="chatbot-window" id="chatbotWindow" style="">
+        <div class="chatbot-header">
+            <div>
+                <strong>Mile High Fix &amp; Haul LLC Assistant</strong>
+                <div style="font-size: 0.8rem; opacity: 0.9;">Ask us anything!</div>
+            </div>
+            <div class="chatbot-close" data-toggle="chatbot">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="chatbot-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-bubble">
+                    👋 Hi! I'm here to help. What can I do for you today?
+                    <div class="quick-replies">
+                        <div class="quick-reply" data-quick-reply="Book a service">📅 Book a service</div>
+                        <div class="quick-reply" data-quick-reply="Get pricing">💰 Get pricing</div>
+                        <div class="quick-reply" data-quick-reply="Ask a question">❓ Ask a question</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatInput" placeholder="Type your message...">
+            <button id="chatSendBtn"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- STICKY BUTTONS -->
+    <div class="sticky-btns" style="">
+        <div class="chatbot-toggle" data-toggle="chatbot" title="Chat with us">
+            <i class="fas fa-comments"></i>
+        </div>
+        <a href="tel:7209850587" class="float-btn phone-btn" title="Call Now">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- MOBILE NAV BOTTOM -->
+    <nav class="mobile-bar" style="">
+        <button class="nav-btn mobile-link active" data-target="home" data-router="home">
+            <i class="fas fa-home" aria-hidden="true"></i>Home
+        </button>
+        <button class="nav-btn mobile-link" data-target="services" data-router="services">
+            <i class="fas fa-broom" aria-hidden="true"></i>Services
+        </button>
+        <button class="nav-btn mobile-link" data-target="home" data-router="home" style="transform: translateY(-15px);">
+            <div
+                style="background: var(--white); padding: 5px; border-radius:32px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+                <img src="https://ui-avatars.com/api/?name=Mile+High+Fix&background=0f496c&color=fff&size=80"
+                    alt="Mile High Fix &amp; Haul LLC Logo"
+                    style="height: 45px; width: auto; border-radius: 4px; display: block;">
+            </div>
+        </button>
+        <button class="nav-btn mobile-link" data-target="portfolio" data-router="portfolio">
+            <i class="fas fa-photo" aria-hidden="true"></i>Portfolio
+        </button>
+        <button class="nav-btn mobile-link" data-target="contact" data-router="contact">
+            <i class="fas fa-paper-plane" aria-hidden="true"></i>Contact
+        </button>
+    </nav>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Use backticks for string variables to safely allow apostrophes like "Men's" in the generated output.
+        const serviceDetails = {
+            'tv-mounting': {
+                title: `TV Mounting`,
+                details: [
+                    `Under 40" TVs: $120-$200`,
+                    `41-60" TVs: $180-$300`,
+                    `61"+ TVs: $250-$600+`,
+                    `Wall type assessment included`,
+                    `Bracket and cable management`
+                ]
+            },
+            'furniture-assembly': {
+                title: `Furniture Assembly`,
+                details: [
+                    `All brands and types`,
+                    `Same-day service available`,
+                    `Tools and hardware included`,
+                    `Professional and precise`,
+                    `Starting at $75`
+                ]
+            },
+            'basic-plumbing': {
+                title: `Basic Plumbing`,
+                details: [
+                    `Leak repair`,
+                    `Drain unclogging`,
+                    `Faucet installation`,
+                    `Pipe fixes`,
+                    `$120-$300`
+                ]
+            },
+            'basic-electrical': {
+                title: `Basic Electrical`,
+                details: [
+                    `Outlet repairs`,
+                    `Switch replacements`,
+                    `Light fixture installation`,
+                    `Basic wiring`,
+                    `$120-$300`
+                ]
+            },
+            'drywall-repairs': {
+                title: `Drywall &amp; Door Repairs`,
+                details: [
+                    `Drywall patch &amp; repair`,
+                    `Blind installation`,
+                    `Door repair`,
+                    `Door installation`,
+                    `$60-$600+`
+                ]
+            },
+            'junk-removal': {
+                title: `Junk Removal`,
+                details: [
+                    `Single items $80-$120`,
+                    `Mattress removal $60-$100`,
+                    `Appliance removal $60-$120`,
+                    `Truck loads $120-$550`,
+                    `Dump fees included`
+                ]
+            }
+        };
+
+        // Router function
+        function router(pageId) {
+            document.querySelectorAll('.page-section').forEach(sec => sec.classList.remove('active'));
+            const target = document.getElementById(pageId);
+            if (target) target.classList.add('active');
+
+            window.scrollTo(0, 0);
+
+            const allLinks = document.querySelectorAll('.nav-link, .mobile-link');
+            allLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-target') === pageId) {
+                    link.classList.add('active');
+                }
+            });
+
+            const navMenu = document.getElementById('navMenu');
+            if (navMenu) {
+                navMenu.classList.remove('active');
+            }
+        }
+
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+
+        function submitContactForm(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+
+            btn.innerText = "Sending...";
+            btn.style.opacity = "0.7";
+
+            setTimeout(() => {
+                alert(`✅ Success! We have received your request and will contact you within 24 hours at 720-985-0587.`);
+                e.target.reset();
+                btn.innerHTML = originalText;
+                btn.style.opacity = "1";
+            }, 1500);
+        }
+
+        function toggleChatbot() {
+            document.getElementById('chatbotWindow').classList.toggle('active');
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('chatInput');
+            const message = input.value.trim();
+            if (!message) return;
+
+            addMessage(message, 'user');
+            input.value = '';
+
+            setTimeout(() => {
+                const response = getBotResponse(message);
+                addMessage(response, 'bot');
+            }, 500);
+        }
+
+        function sendQuickReply(message) {
+            addMessage(message, 'user');
+            setTimeout(() => {
+                const response = getBotResponse(message);
+                addMessage(response, 'bot');
+            }, 500);
+        }
+
+        function addMessage(text, sender) {
+            const messagesDiv = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            const safeText = sender === 'user' ? text.replace(/</g, "&lt;").replace(/>/g, "&gt;") : text;
+            messageDiv.innerHTML = `<div class="message-bubble">${safeText}</div>`;
+            messagesDiv.appendChild(messageDiv);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+
+        function getBotResponse(message) {
+            const msg = message.toLowerCase();
+            if (msg.includes('book') || msg.includes('appointment') || msg.includes('schedule')) {
+                return `You can book a service directly through our website booking form! Or call Justin at 720-985-0587.`;
+            } else if (msg.includes('price') || msg.includes('cost') || msg.includes('rate')) {
+                return `Check our Services page for details! Service calls start at $100. Call 720-985-0587 for a custom quote.`;
+            } else if (msg.includes('service') || msg.includes('do you')) {
+                return `We provide TV Mounting, Furniture Assembly, Plumbing, Electrical, Drywall/Door Repairs, and Junk Removal!`;
+            } else if (msg.includes('hour') || msg.includes('available') || msg.includes('open')) {
+                return `We offer same day or next day service! Call Justin at 720-985-0587 to schedule.`;
+            } else if (msg.includes('pay') || msg.includes('credit') || msg.includes('card')) {
+                return `We accept major credit cards and other convenient payment methods.`;
+            } else if (msg.includes('area') || msg.includes('location') || msg.includes('where')) {
+                return `📍 We serve Denver, CO and surrounding areas. Call us at 720-985-0587 to confirm we service your specific area.`;
+            } else if (msg.includes('emergency') || msg.includes('urgent') || msg.includes('asap')) {
+                return `🚨 For urgent requests, please call us directly at 720-985-0587. We often accommodate same-day service!`;
+            } else if (msg.includes('hello') || msg.includes('hi') || msg.includes('hey')) {
+                return `👋 Hello! How can I help you today? I can help you book a service, get pricing info, or answer questions about our services.`;
+            } else if (msg.includes('thank')) {
+                return `😊 You're welcome! Is there anything else I can help you with?`;
+            } else {
+                return `Thank you for your message! Call Justin at 720-985-0587 or use our contact form for more details.`;
+            }
+        }
+
+        function openServiceModal(serviceKey) {
+            const service = serviceDetails[serviceKey];
+            if (!service) return;
+
+            document.getElementById('serviceModalTitle').textContent = service.title;
+            const detailsList = document.getElementById('serviceDetailsList');
+            detailsList.innerHTML = '';
+
+            service.details.forEach(detail => {
+                const li = document.createElement('li');
+                li.textContent = detail;
+                detailsList.appendChild(li);
+            });
+
+            document.getElementById('serviceModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeServiceModal() {
+            document.getElementById('serviceModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // ==========================================
+        // GLOBAL EVENT DELEGATION (Fixes "Dead Buttons")
+        // ==========================================
+        // This fully bypasses website builder security filters that delete inline "onclick" attributes.
+        document.addEventListener('click', function (e) {
+            // 1. Navigation Routing Links & Buttons
+            const routerBtn = e.target.closest('[data-router]');
+            if (routerBtn) {
+                const target = routerBtn.getAttribute('data-router');
+                if (target === 'reviews') {
+                    document.getElementById('demoModal').classList.add('active');
+                }
+                e.preventDefault();
+                router(target);
+            }
+
+            // 2. Mobile Menu Toggle
+            if (e.target.closest('[data-toggle="menu"]')) {
+                e.preventDefault();
+                toggleMenu();
+            }
+
+            // 3. Prevent default jumps for # links
+            if (e.target.closest('[data-action="prevent"]')) {
+                e.preventDefault();
+            }
+
+            // 4. Open Service Modal
+            const serviceModalBtn = e.target.closest('[data-service-modal]');
+            if (serviceModalBtn) {
+                openServiceModal(serviceModalBtn.getAttribute('data-service-modal'));
+            }
+
+            // 5. Close Service Modal
+            if (e.target.closest('[data-close-modal]') || e.target.classList.contains('service-modal')) {
+                closeServiceModal();
+            }
+
+            // 6. Modal Book Action
+            if (e.target.closest('[data-modal-action="book"]')) {
+                closeServiceModal();
+                router('contact');
+            }
+
+            // 7. Toggle Chatbot
+            if (e.target.closest('[data-toggle="chatbot"]')) {
+                toggleChatbot();
+            }
+
+            // 8. Send Chat Message
+            if (e.target.closest('#chatSendBtn')) {
+                sendMessage();
+            }
+
+            // 9. Quick Replies
+            const quickReply = e.target.closest('[data-quick-reply]');
+            if (quickReply) {
+                sendQuickReply(quickReply.getAttribute('data-quick-reply'));
+            }
+        });
+
+        document.addEventListener('submit', function (e) {
+            if (e.target.id === 'contactForm') {
+                submitContactForm(e);
+            }
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeServiceModal();
+
+            if (e.key === 'Enter' && document.activeElement.id === 'chatInput') {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+    </script>
+</body>
+
+</html>
